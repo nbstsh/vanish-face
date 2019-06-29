@@ -1,0 +1,27 @@
+.container {
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	--width: 100%;
+	--height: 100%;
+	width: var(--width);
+	height: var(--height);
+	margin: 0 auto;
+	position: relative;
+	line-height: 0;
+	& > * {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
+
+.video {
+	//TODO there is white space above and belowe the video
+	display: block;
+}
